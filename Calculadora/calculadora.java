@@ -48,11 +48,30 @@ public class calculadora {
 
             case 3:
                 System.out.println("Digite los numeros a multiplicar");
+                System.out.println("Ingrese el primer numero a multiplicar");
+                int multiplicar1 = entrada.nextInt();
+
+                System.out.println("Ingrese el segundo numero a multiplicar");
+                int multiplicar2 = entrada.nextInt();
+
+                int multiplicar = multiplicar1 * multiplicar2;
+                System.out.println("La multiplicacion de: " + multiplicar1 + "y:" + multiplicar2 + "es:" + multiplicar);
+
+
 
                 break;
 
             case 4:
                 System.out.println("Digite los numeros a dividir");
+                System.out.println("Ingrese el primer numero a dividir");
+                int dividir1 = entrada.nextInt();
+
+                System.out.println("Ingrese el segundo numero a dividir");
+                int dividir2 = entrada.nextInt();
+
+                int dividir = dividir1 / dividir2;
+                System.out.println("La division de: " + dividir1 + "y:" + dividir2 + "es:" + dividir);
+                
 
                 break;
 
@@ -61,7 +80,7 @@ public class calculadora {
         }
         System.out.println("Para regresar marca 's' o 'S':");
         letra = entrada.next().charAt(0);
-        
+
     } while( letra == 's' || letra == 'S');
     System.out.println("Hasta luego:");
     entrada.close();
