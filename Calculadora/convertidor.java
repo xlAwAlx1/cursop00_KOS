@@ -5,6 +5,7 @@ public class convertidor {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         char letra;
+        
         do{
         System.out.println("Convertidor de unidades");
         System.out.println("1.- Metro a Kilometros");
